@@ -1,0 +1,144 @@
+
+:root{
+    --Light-red: hsl(0, 100%, 67%);
+    --Orange-yellow: hsl(39, 100%, 56%);
+    --Green-tale: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsla(221, 100%, 96%,89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+    --dark-gray-bluet: hsla(224,30%,27%,50%);
+}
+.attribution{
+    margin-top:8.7em;
+}
+body{
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 1.2rem;
+   
+    
+}
+p{
+    font-size: 18px;
+}
+.pale-blue{
+    color:var(--pale-blue);
+}
+.dark-blue{
+    color:var(--dark-gray-blue);
+}
+.container{
+    width: 45vw;
+    margin:0 auto;
+    margin-top: 15%!important;
+    
+}
+.card{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+    background:linear-gradient(to top,hsla(234, 85%, 45%,88%)55%,rgb(101, 69, 226));
+   padding:30px;
+}
+.right{
+    border-radius: 0px 25px 25px 0px;   
+    box-shadow: none;
+    background-color: var(--white);
+    box-shadow:5px 5px 20px hsl(0, 0%, 90%);
+    padding:30px;
+}
+.circle{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  justify-content: center;
+    border-radius: 50%;
+    background:linear-gradient(to top,hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0))
+    
+}
+
+.text-center{
+    text-align: center;
+  
+}
+.white{
+    color:var(--white);
+}
+.big-font{
+    font-size: 3.0em;
+    font-weight: 800;
+}
+.weight8{
+    font-weight: 800;
+}
+.normal-font{
+    font-weight: 400;
+}
+.dark-bluet{
+    color: var(--dark-gray-bluet);
+    
+}
+
+ul{
+    list-style-type: none;
+    margin-left: -67px;
+}
+li{
+    padding:10px;
+    margin: 10%;
+    width: 80%;
+    border-radius: 15px;
+}
+.float-right{
+    float: right;
+}
+.button{
+    text-align: center;
+    color: var(--white);
+    width: 80%;
+    height: 10%;
+    margin: 0 auto;
+    background-color: var(--dark-gray-blue);
+    border-radius: 25px;
+    
+}
+
+
+@media  screen and (max-width:375px) {
+    .container{
+        width: 100%;
+        height: 100%;
+        position: absolute!important;;
+        top: 0!important;
+        left: 0!important;
+        
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+    }
+    .top-card{
+        width: 85%;
+    }
+    .bot-card{
+        width: 85%;
+    }
+    .attribution{
+        position: fixed;
+        bottom:0;
+        margin-right: auto;
+        margin-left: auto;
+     }
+
+    .button{
+        height: 40px;
+}
+}
